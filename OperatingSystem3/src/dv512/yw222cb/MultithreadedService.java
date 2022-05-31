@@ -1,3 +1,5 @@
+package dv512.yw222cb;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -7,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /*
- * File:	MultithreadedService.java
+ * File:	dv512.yw222cb.MultithreadedService.java
  * Course: 	20HT - Operating Systems - 1DV512
  * Author: 	Yibo Wang yw222cb
  * Date: 	April 2022
@@ -68,7 +70,7 @@ public class MultithreadedService {
     @Override
     public void run() {
       long counters;
-      System.out.println(Thread.currentThread().getName()+"\t"+ getId());
+//      System.out.println(Thread.currentThread().getName()+"\t"+ getId());
       // record start time for every process
       startTime = timeOnly.format(calendar.getTime());
       counters = burstTime;
